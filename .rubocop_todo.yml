@@ -1,0 +1,31 @@
+Style/Documentation:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  Enabled: false
+
+Style/CaseEquality:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'spec/swagger_helper.rb'
+    - 'lib/tasks/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*.rb'

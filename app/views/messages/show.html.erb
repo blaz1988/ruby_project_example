@@ -1,0 +1,13 @@
+<div class="card my-3">
+  <h5 class="card-header">
+    <%= display_sender(@message) %>
+    <br>
+    <%= display_receipent(@message) %>
+  </h5>
+  <div class="card-body">
+    <%= display_notice %>
+    <p class="card-text"><%= @message.body %></p>
+    <%= reply_link(@message) %>
+    <%= link_to "I've lost my prescription", lost_prescription_path, class: "btn btn-primary" %>
+  </div>
+</div>
